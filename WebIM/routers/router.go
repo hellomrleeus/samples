@@ -1,13 +1,13 @@
 package routers
 
 import (
-	"github.com/beego/samples/WebIM/controllers"
 	"github.com/astaxie/beego"
+	"github.com/beego/samples/WebIM/controllers"
 )
 
 func init() {
 	// Register routers.
-	beego.Router("/", &controllers.AppController{})
+	beego.Router("/wash", &controllers.AppController{})
 	// Indicate AppController.Join method to handle POST requests.
 	beego.Router("/join", &controllers.AppController{}, "post:Join")
 
